@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+*.sqlite3
+*.db
+*.dat
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.tmp
+*.bak
+*.swp
+*.swo
+.env
+.venv/
+venv/
+.envrc
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# VSCode
+.vscode/
+.settings/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de exportação
+saida.csv
+saida.xlsx
