@@ -1,0 +1,50 @@
+name: Python CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pandas openpyxl
+
+    - name: Run scripts de exemplo
+      run: |
+        python 01_Python_Basico/01_variaveis_e_tipos.py
+        python 01_Python_Basico/02_estruturas_decisao.py
+        python 01_Python_Basico/03_estruturas_repeticao.py
+        python 01_Python_Basico/04_listas_e_tuplas.py
+        python 01_Python_Basico/05_dicionarios_e_conjuntos.py
+        python 01_Python_Basico/06_funcoes.py
+        python 01_Python_Basico/07_manipulacao_arquivos.py
+        python 02_Manipulacao_Dados/01_introducao_pandas.py
+        python 02_Manipulacao_Dados/02_leitura_csv.py
+        python 02_Manipulacao_Dados/03_leitura_excel.py
+        python 02_Manipulacao_Dados/04_filtragem_dados.py
+        python 02_Manipulacao_Dados/05_selecao_colunas.py
+        python 02_Manipulacao_Dados/06_selecao_linhas.py
+        python 02_Manipulacao_Dados/07_ordenacao_dados.py
+        python 02_Manipulacao_Dados/08_tratamento_nulos.py
+        python 02_Manipulacao_Dados/09_remocao_duplicatas.py
+        python 02_Manipulacao_Dados/10_agrupamento_dados.py
+        python 02_Manipulacao_Dados/11_estatisticas_basicas.py
+        python 02_Manipulacao_Dados/12_merge_join.py
+        python 02_Manipulacao_Dados/13_aplicacao_funcoes.py
+        python 02_Manipulacao_Dados/14_manipulacao_strings.py
+        python 02_Manipulacao_Dados/15_exportacao_dados.py
