@@ -1,4 +1,5 @@
 # Funções
+"""Exercícios com funções."""
 # Exercício 1: Crie uma função que retorna o quadrado de um número
 def quadrado(x):
     return x ** 2

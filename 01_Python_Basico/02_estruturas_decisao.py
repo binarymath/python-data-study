@@ -1,4 +1,5 @@
 # Estruturas de decisão: if, elif, else
+"""Exercícios de estruturas de decisão: if, elif, else."""
 # Exercício 1: Verifique se um número é positivo, negativo ou zero
 numero = 0
 if numero > 0:

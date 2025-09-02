@@ -1,4 +1,5 @@
 # Dia 12 - Merge e Join de DataFrames
+"""Merge e Join de DataFrames."""
 import pandas as pd
 
 df1 = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})

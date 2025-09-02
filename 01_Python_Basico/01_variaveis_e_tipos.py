@@ -1,4 +1,5 @@
 # Introdução ao Python: Variáveis, tipos de dados e operações básicas
+"""Exercícios de variáveis, tipos de dados e operações básicas."""
 # Exercício 1: Crie uma variável chamada nome e atribua seu nome a ela
 nome = "SeuNome"
 

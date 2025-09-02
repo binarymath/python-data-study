@@ -1,4 +1,5 @@
 # Listas e tuplas
+"""Exercícios com listas e tuplas."""
 # Exercício 1: Crie uma lista com 5 nomes e imprima cada um
 nomes = ["Ana", "Bruno", "Carlos", "Diana", "Eduardo"]
 for nome in nomes:
