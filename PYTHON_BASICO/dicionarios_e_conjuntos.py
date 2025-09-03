@@ -2,5 +2,5 @@
 # Dicionários e conjuntos
 aluno = {"nome": "João", "idade": 20, "curso": "Python"}
 print(aluno.keys())
-numeros = {1, 2, 2, 3, 4, 4, 5}
+numeros = {1, 2, 3, 4, 5}  # Removidos valores duplicados para evitar W0130
 print(numeros)
