@@ -1,23 +1,21 @@
-[MESSAGES CONTROL]
-disable=C0103,W0130
-
-[FORMAT]
-indent-string='    '
-
 [MASTER]
-ignore-patterns=.*\.ipynb
-[MASTER]
-ignore-patterns=^tests/,.*/__init__\.py
+ignore=.venv,venv,build,dist,__pycache__
+jobs=1
+persistent=yes
+unsafe-load-any-extension=no
 
 [MESSAGES CONTROL]
+# Deixe estes ativos (vamos corrigir no código)
 disable=
-  C0114,  ; missing-module-docstring
-  C0115,  ; missing-class-docstring
-  C0116   ; missing-function-docstring
+    C0114,  # missing-module-docstring (aceitaremos por enquanto nos módulos simples)
+    C0115   # missing-class-docstring
+
+[REPORTS]
+score=yes
 
 [FORMAT]
 max-line-length=100
+indent-string='    '
 
-[DESIGN]
-max-args=6
-max-attributes=10
+[BASIC]
+good-names=i,j,k,x,y,z,n,df,dt
